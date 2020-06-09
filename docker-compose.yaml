@@ -1,0 +1,55 @@
+version: "3.3"
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
+    environment:
+      SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_1:
+    #image: /service1:latest
+    build: ./service1
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    environment:
+      SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_2:
+    #image: /service2:latest
+    build: ./service2
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+    environment:
+      SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_3:
+    #image: /service3:latest
+    build: ./service3
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+    environment:
+      SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_4:
+    #image: /service4:latest
+    build: ./service4
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
+    environment: 
+      SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      SECRET_KEY: ${SECRET_KEY}
