@@ -1,17 +1,17 @@
-name: install docker
-hosts: all
-become: true
-roles:
-- dockerinstall
+- name: install docker
+  hosts: all
+  become: true
+  roles:
+  - docker_install
 
 - name: initialise docker swarm on manager-node
-hosts: localhost
-become: true
-roles:
-- docker_init
+  hosts: localhost
+  become: true
+  roles:
+  - dockerinit
 
 - name: add worker-node to swarm
-hosts: worker
-become: true
-roles:
-- dockerswarm
+  hosts: worker
+  become: true
+  roles:
+  - dockerswarm

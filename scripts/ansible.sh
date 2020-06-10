@@ -4,6 +4,6 @@ sudo apt-get install python -y
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
-pip install --user ansible
+pip3 install --user ansible
 ansible --version
 ansible-playbook -v -i inventory.cfg playbook.yaml
