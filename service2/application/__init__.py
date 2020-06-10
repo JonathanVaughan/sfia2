@@ -1,19 +1,21 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
-from random import random
+from random import randint
 from os import getenv
-
-
+ 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']=getenv('PROJECT2_DB_URI')
 app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
+from application.models import Country
+
 @app.route('/', methods=['GET', 'POST'])
-def Country():
-   number = random.randint(1, 10)
-   country = Country.query.filter_by(id=number).first
-   return str(country)
+def location():
+   number = randint(1, 10)
+   place = Country.query.filter_by(id=number).first()
+   return str(place)
+   
 
 
     #country = select.order_by(func.rand(country_db)).limit(10)

@@ -13,13 +13,14 @@ from application.models import Plan
 
 @app.route('/', methods=['GET'])
 def holidayplan():
-    country = requests.get('http://service2:5001/').text
-    activity = requests.get('http://service3:5002/').text
-    table = Plan(
-        country = country,
-        activity = activity
-    )
-    db.session.add(table)
-    db.session.commit()
-    response = "Country: " + country + "Activity: " + activity 
+    count = requests.get('http://service2:5001/').text
+    activ = requests.get('http://service3:5002/').text
+    response = "Country: " + count + "Activity: " + activ
+   # table = Plan(
+    #    country = count,
+     #   activity = activ
+    #)
+    #db.session.add(table)
+    #db.session.commit()
+    print(response)
     return response

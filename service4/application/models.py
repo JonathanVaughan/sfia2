@@ -10,7 +10,3 @@ class Plan(db.Model):
             'Plan: ', str(self.Plan)
             ])
 
-    def __init__(self, id, holiday, activity):
-        self.id = id
-        self.holiday = holiday
-        self.activity = activity

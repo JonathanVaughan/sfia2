@@ -1,7 +1,8 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
-from random import random
+from random import randint
 from os import getenv
+
 
 
 app = Flask(__name__)
@@ -13,6 +14,7 @@ from application.models import Activity
 
 @app.route('/', methods=['GET', 'POST'])
 def Activ():
-   number = random.randint(1, 10)
-   activity = Activity.query.filter_by(id=number).first
+   number = randint(1, 10)
+   activity = Activity.query.filter_by(id=number).first()
    return str(activity)
+   

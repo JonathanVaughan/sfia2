@@ -1,4 +1,17 @@
-- hosts: test
-  tasks:
-  - name: "Ping"
-    ping:
+name: install docker
+hosts: all
+become: true
+roles:
+- dockerinstall
+
+- name: initialise docker swarm on manager-node
+hosts: localhost
+become: true
+roles:
+- docker_init
+
+- name: add worker-node to swarm
+hosts: worker_machine
+become: true
+roles:
+- dockerswarm

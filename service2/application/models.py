@@ -10,7 +10,5 @@ class Country(db.Model):
             'country: ', str(self.country)
         ]) 
     
-    def __init__(self, id, country):
-        self.id = id
-        self.country = country
+
     
