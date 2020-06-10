@@ -11,7 +11,7 @@ roles:
 - docker_init
 
 - name: add worker-node to swarm
-hosts: worker_machine
+hosts: worker
 become: true
 roles:
 - dockerswarm
