@@ -15,12 +15,12 @@ from application.models import Plan
 def holidayplan():
     count = requests.get('http://service2:5001/').text
     activ = requests.get('http://service3:5002/').text
-    response = count + activ
-   # table = Plan(
-    #    country = count,
-     #   activity = activ
-    #)
-    #db.session.add(table)
-    #db.session.commit()
-    print(response)
-    return response
+    #response = "you are going to: " + count + " your activity is: " + activ
+    table = Plan(
+        holiday = count,
+        activity = activ
+    )
+    db.session.add(table)
+    db.session.commit()
+    #print(response)
+    return "you are going to: " + count + " your activity is: " + activ
