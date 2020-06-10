@@ -6,10 +6,4 @@ class Activity(db.Model):
     
     
     def __repr__(self):
-        return ''.join([
-            'activity: ', str(self.activity)
-        ]) 
-    
-    def __init__(self, id, activity):
-        self.id = id
-        self.activity = activity
+        return str(self.activity)

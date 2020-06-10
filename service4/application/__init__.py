@@ -15,7 +15,7 @@ from application.models import Plan
 def holidayplan():
     count = requests.get('http://service2:5001/').text
     activ = requests.get('http://service3:5002/').text
-    response = "Country: " + count + "Activity: " + activ
+    response = count + activ
    # table = Plan(
     #    country = count,
      #   activity = activ

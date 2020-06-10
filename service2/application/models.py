@@ -6,9 +6,8 @@ class Country(db.Model):
     
     
     def __repr__(self):
-        return ''.join([
-            'country: ', str(self.country)
-        ]) 
+        return str(self.country)
+        
     
 
     

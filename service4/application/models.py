@@ -5,8 +5,4 @@ class Plan(db.Model):
     holiday = db.Column(db.String(30), nullable=False)
     activity = db.Column(db.String(30), nullable=False)
 
-    def __repr__(self):
-        return ''.join([
-            'Plan: ', str(self.Plan)
-            ])
 
