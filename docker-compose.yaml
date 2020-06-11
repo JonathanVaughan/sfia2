@@ -21,7 +21,7 @@ services:
     deploy:
       replicas: 3
   service1:
-    image: service1:latest
+    image: jonvaughan2000/service1:latest
     build: ./service1
     ports:
     - target: 5000
@@ -35,7 +35,7 @@ services:
     deploy:
       replicas: 3
   service2:
-    image: service2:latest
+    image: jonvaughan2000/service2:latest
     build: ./service2
     ports:
     - target: 5001
@@ -49,7 +49,7 @@ services:
     deploy:
       replicas: 3
   service3:
-    image: service3:latest
+    image: jonvaughan2000/service3:latest
     build: ./service3
     ports:
     - target: 5002
@@ -63,7 +63,7 @@ services:
     deploy:
       replicas: 3
   service4:
-    image: service4:latest
+    image: jonvaughan2000/service4:latest
     build: ./service4
     ports:
     - target: 5003
