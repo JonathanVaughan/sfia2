@@ -17,7 +17,7 @@ class TestBase(TestCase):
                 )
         return app
     
-    def setup(self):
+    def setUp(self):
         # called before every test
         db.session.commit()
         db.drop_all()
