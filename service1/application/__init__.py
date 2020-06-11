@@ -16,4 +16,4 @@ from application.models import Plan
 def home():
     holplan = Plan.query.all()
     holiData = requests.get('http://service4:5003/').text
-    return render_template('home.html', title = 'Holiday', holiday = holiData, holplan = holplan)
+    return render_template('home.html', title = 'Holiday', holiday = holiData, plan = holplan)

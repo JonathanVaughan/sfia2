@@ -18,6 +18,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - holiday_network
+    deploy:
+      replicas: 3
   service1:
     image: service1:latest
     build: ./service1
@@ -30,6 +32,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - holiday_network
+    deploy:
+      replicas: 3
   service2:
     image: service2:latest
     build: ./service2
@@ -42,6 +46,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - holiday_network
+    deploy:
+      replicas: 3
   service3:
     image: service3:latest
     build: ./service3
@@ -54,6 +60,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - holiday_network
+    deploy:
+      replicas: 3
   service4:
     image: service4:latest
     build: ./service4
@@ -66,3 +74,5 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - holiday_network
+    deploy:
+      replicas: 3
