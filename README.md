@@ -93,3 +93,14 @@ The NGINX config that i setup for my listens for requests on port 80 and interna
 * DockerHub: Version Control for docker images
 * NGINX: Security and Load-balancing
 
+## Testing
+For testing PYTEST was used 
+Coverage Report for each service:
+##### Service 1
+![](service1/test-results/service1results.PNG)
+##### Service 2z
+![](service2/test-results/service2results.PNG)
+##### Service 3
+![](service3/test-results/service3results.PNG)
+##### Service 4
+![](service4/test-results/service4results.PNG)
