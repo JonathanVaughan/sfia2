@@ -1,6 +1,9 @@
 # Holiday Generator
 
 ## Contents
+* Brief
+* Project Proposal
+* Trello Board
 
 ## Project Brief
 Create an application that generates “Objects” upon a set of predefined rules.
@@ -21,3 +24,6 @@ Generates a random Activty from a predefined SQL table.
 ##### Service 4
 Makes a request to service 2 and 3 and adds them both to final SQL table
 Puts the collected requests from service 2 and 3 into a string ready to be sent to service 1
+
+## Trello Board
+![](images/Trellostart.PNG)
