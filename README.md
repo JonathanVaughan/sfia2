@@ -28,7 +28,23 @@ Puts the collected requests from service 2 and 3 into a string ready to be sent 
 ## Trello Board
 For my project I utilised a kanban Trello board. This helped me tack each stage of my project adding on new tasks and tracking my development stage as I created my application helpinh me improve overall efficiency.
 
-##### Before Completion
+### Before Completion
 Shown below is my intial trello board:
 ![](images/Trellostart.PNG)
+
+### Mid development
+
+### After Completion
+
+## Risk Assesment
+Before starting work on my application an initial risk assesment was created shown below
+![](images/RiskA.PNG)
+
+### Revisited
+After Completing the project I revisited the risk assesment and commented on wether or not i had encountered the inital risk.
+Revisited Risk assesment shown below:
+![](images/RiskB.PNG)
+
+## Entity Relationship Diagram
+![](images/ERD.PNG)
 
