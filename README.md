@@ -47,4 +47,15 @@ Revisited Risk assesment shown below:
 
 ## Entity Relationship Diagram
 ![](images/ERD.png)
+For my project I used 3 tables as you can see above
+
+The Country table has 10 random countrys for service 2 to randomly pull down
+
+The Activity table has 10 random activitys for service 3 to randomly choose from
+
+The plan table gets the randomly pulled objects from in service 4 and adds them to a table in the home page, this also shows persistence of data.
+
+
+## Service Architecture Diagram
+![](images/Flow.png)
 
