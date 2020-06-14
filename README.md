@@ -113,3 +113,27 @@ I was unable to implement testing with selenium due to time constraints.
 This was my front end for my project on service 1.
 It displays the generated string from service 4 at the top and previous generations below.
 
+## Improvements for future
+1. Work more on the overall design of the website
+2. Allow the user to apply filters and some choice such as specify a region or a type of activity.
+3. Gain better overall knowledge of the used tools to produce a more effective and efficient final product
+4. Add CRUD functionality to my project
+
+## Installation Guide
+### Prerequisites
+* 2 webservers running on Ubuntu 18.04
+* MYSQL server
+* SSH keys configured so both webservers can communicate
+### Steps
+1. Install Jenkins on manager node
+2. Clone Github repo (https://github.com/JonathanVaughan/sfia2.git)
+3. Configure inventory.cfg for your nodes
+4. Enable jenkins
+5. Add user and jenkins ssh keys from manager into worker
+
+## Authors
+Jonathan Vaughan
+
+## Acknowledgements
+My fantastic trainers at QA and my good friends in group 4.
+
