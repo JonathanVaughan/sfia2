@@ -109,7 +109,7 @@ I was unable to implement testing with selenium due to time constraints.
 ![](service4/test-results/service4results.PNG)#
 
 ## Design
-![](images/Home.PNG)
+![](images/Home.PNG)  
 This was my front end for my project on service 1.
 It displays the generated string from service 4 at the top and previous generations below.
 
