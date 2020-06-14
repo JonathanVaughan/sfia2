@@ -58,14 +58,38 @@ The plan table gets the randomly pulled objects from in service 4 and adds them 
 
 ## Service Architecture Diagram
 ![](images/Flow.png)
-##### Service 1
+#### Service 1
 Responsible for everything the user sees. Through the use of HTML, Jinja2 and Flask, This service Displays the generated data from service 2 and 3. It also displays information from the SQL table made in service 4 displaying previously generated combonations
 
-##### Service 2 and 3
+#### Service 2 and 3
 Generate a random object to be returned
 
-##### Service 4
+#### Service 4
+Service 4 requests the generated objects from service 2 and 3, combines them into a string and returns the string ready to be requested from service 1
+It also adds the output from service 2 and 3 to an SQL table to be displayed on service 1
 
+## System Security
+![](images/nginx.PNG)
+A large part of this project is focused on security. Various methods taught in lectures have been used to disguise sensitive information from the world. NGINX allowed me to listen for ports in use and redirect / hide them from anyone outside of the network.
+The NGINX config that i setup for my listens for requests on port 80 and internally redirects it to my service 1 on port 5000.
 
-
+## Pipeline 
+![](images/pipeline.png)
+#### Used technologies and languages
+* Github: Version Control System
+* Trello Board: Project Tracking
+* Jenkins: CI Server
+* Ansible: Configuration Management
+* Google Cloud Platform: Live Environment and SQL Database
+* Visual Studio Code: IDE using the following languages:
+    * Python3
+    * HTML
+    * CSS
+    * Flask
+    * Jinja2
+    * MYSQL
+* Docker: Containerisation
+* Docker Swarm and Docker Stack: Orchestration
+* DockerHub: Version Control for docker images
+* NGINX: Security and Load-balancing
 
