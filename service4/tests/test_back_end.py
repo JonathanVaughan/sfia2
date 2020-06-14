@@ -52,3 +52,7 @@ class TestViews(TestBase):
                 ),
             )
             self.assertIn(b"China", response.data)
+
+    # def test_url(requests_mock):
+    #     requests_mock.get('http://service2:5001/', text='data')
+    #     assert 'data' == requests.get('http://service2:5001/').text
