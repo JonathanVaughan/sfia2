@@ -74,7 +74,9 @@ A large part of this project is focused on security. Various methods taught in l
 The NGINX config that i setup for my listens for requests on port 80 and internally redirects it to my service 1 on port 5000.
 
 ## Pipeline 
-![](images/pipeline.png)
+![](images/pipeline.png)  
+The code for my project was written in vscode using its SSH extenstion it is then pushed to GitHub. Jenkins detects a new push to master with the use of a webhook. Using custom shell scripts and a Jenkins file, Jenkins builds each of the services and deploys the application. The application is deployed by docker swarm and stack, this distributes the workload between the manager and the worker node. Jenkins is also setup so that whenever new code is pushed to the master it will automatically build and push the newest version of the images to DockerHub.
+
 #### Used technologies and languages
 * Github: Version Control System
 * Trello Board: Project Tracking
