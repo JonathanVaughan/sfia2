@@ -9,7 +9,6 @@
     
         <h1>{{ holiday }}</h1>
         <p>past random holidays</p>
-        <button onClick="window.location.reload();">Generate</button>
         {% for p in plan %}
         <p>Country: {{ p.holiday }} Activity: {{ p.activity }}</p>
       
