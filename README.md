@@ -26,4 +26,9 @@ Makes a request to service 2 and 3 and adds them both to final SQL table
 Puts the collected requests from service 2 and 3 into a string ready to be sent to service 1
 
 ## Trello Board
+For my project I utilised a kanban Trello board. This helped me tack each stage of my project adding on new tasks and tracking my development stage as I created my application helpinh me improve overall efficiency.
+
+##### Before Completion
+Shown below is my intial trello board:
 ![](images/Trellostart.PNG)
+
