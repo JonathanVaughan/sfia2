@@ -95,7 +95,10 @@ The NGINX config that i setup for my listens for requests on port 80 and interna
 
 ## Testing
 For testing PYTEST was used 
-Coverage Report for each service:
+I was able to conduct tests for each function of the application, however due to the project utilising micro-services I was unable to unable to test some functions of the application. An attempt to utilise mocking was made (Shown below) unfortunately due to time constriants I was unable to test these features.
+![](images/mocking.PNG)  
+I was unable to implement testing with selenium due to time constraints.
+### Coverage Report for each service:
 ##### Service 1
 ![](service1/test-results/service1results.PNG)
 ##### Service 2z
@@ -103,4 +106,10 @@ Coverage Report for each service:
 ##### Service 3
 ![](service3/test-results/service3results.PNG)
 ##### Service 4
-![](service4/test-results/service4results.PNG)
+![](service4/test-results/service4results.PNG)#
+
+## Design
+![](images/Home.PNG)
+This was my front end for my project on service 1.
+It displays the generated string from service 4 at the top and previous generations below.
+
