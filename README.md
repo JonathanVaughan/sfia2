@@ -58,4 +58,14 @@ The plan table gets the randomly pulled objects from in service 4 and adds them 
 
 ## Service Architecture Diagram
 ![](images/Flow.png)
+##### Service 1
+Responsible for everything the user sees. Through the use of HTML, Jinja2 and Flask, This service Displays the generated data from service 2 and 3. It also displays information from the SQL table made in service 4 displaying previously generated combonations
+
+##### Service 2 and 3
+Generate a random object to be returned
+
+##### Service 4
+
+
+
 
