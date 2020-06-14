@@ -46,5 +46,5 @@ Revisited Risk assesment shown below:
 ![](images/RiskB.PNG)
 
 ## Entity Relationship Diagram
-![](images/ERD.PNG)
+![](images/ERD.png)
 
