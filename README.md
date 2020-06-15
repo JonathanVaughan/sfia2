@@ -5,15 +5,27 @@
 * Project Proposal
 * Trello Board
 * Risk assesment
-* Entity Relation Diagram
-* 
+* Entity Relationship Diagram
+* Service Architecture Diagram
+* System Security
+* Pipeline 
+* Testing
+* Design
+* Improvements for future
+* Installation Guide
+* Authors
+* Acknowledgements
 
 ## Project Brief
 Create an application that generates “Objects” upon a set of predefined rules.
 Some of the requirements 
 * A Kanban board
 * Version control system
-* 
+* Deployed to a cloud based VM
+* Use a webhook
+* Follow service oriented architecture
+* Deployed using an orchestration and containerisation tool
+* Ansible Playbook should provision the environment
 
 ## Project Proposal
 I decided to create a holiday generator for my application which would generate A random Country and a random activity to be displayed through a front end website.
