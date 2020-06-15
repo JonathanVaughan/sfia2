@@ -4,10 +4,15 @@
 * Brief
 * Project Proposal
 * Trello Board
+* Risk assesment
+* Entity Relation Diagram
+* 
 
 ## Project Brief
 Create an application that generates “Objects” upon a set of predefined rules.
 Some of the requirements 
+* A Kanban board
+* Version control system
 * 
 
 ## Project Proposal
@@ -94,6 +99,7 @@ The code for my project was written in vscode using its SSH extenstion it is the
 * Docker Swarm and Docker Stack: Orchestration
 * DockerHub: Version Control for docker images
 * NGINX: Security and Load-balancing
+* SQL Alchemy
 
 ## Testing
 For testing PYTEST was used 
@@ -120,6 +126,7 @@ It displays the generated string from service 4 at the top and previous generati
 2. Allow the user to apply filters and some choice such as specify a region or a type of activity.
 3. Gain better overall knowledge of the used tools to produce a more effective and efficient final product
 4. Add CRUD functionality to my project
+5. Effective use of GitHub branches as on my last project I lost marks as my master branch was ahead of my developer due to working on the readme from thhe master.
 
 ## Installation Guide
 ### Prerequisites
