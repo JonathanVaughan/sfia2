@@ -8,6 +8,8 @@
 ## Project Brief
 Create an application that generates “Objects” upon a set of predefined rules.
 Some of the requirements 
+* A Kanban board
+* Version control system
 * 
 
 ## Project Proposal
