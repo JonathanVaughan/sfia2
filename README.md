@@ -40,8 +40,8 @@ Generates a random Country from a predefined SQL table.
 Generates a random Activty from a predefined SQL table.
 ##### Service 4
 Makes a request to service 2 and 3 and adds them both to final SQL table
-Puts the collected requests from service 2 and 3 into a string ready to be sent to service 1
-Key for Trello Board
+Puts the collected requests from service 2 and 3 into a string ready to be sent to service 1  
+Key for Trello Board  
 Green: Must Have  
 Yellow: Should Have  
 Orange Could Have
