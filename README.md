@@ -44,7 +44,7 @@ Puts the collected requests from service 2 and 3 into a string ready to be sent 
 Key for Trello Board  
 Green: Must Have  
 Yellow: Should Have  
-Orange Could Have
+Orange Could Have  
 Red: Would Have  
 ## Trello Board
 For my project I utilised a kanban Trello board. This helped me tack each stage of my project adding on new tasks and tracking my development stage as I created my application helpinh me improve overall efficiency.
